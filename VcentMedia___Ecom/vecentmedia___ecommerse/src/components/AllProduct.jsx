@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-
+import { Grid } from "@mui/material";
 const AllProduct = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -27,22 +27,30 @@ const AllProduct = () => {
 
   return (
     <div>
-      <h1>Products :</h1>
-      {loading && "Loading....."}
-      {error && "something went wrong...."}
-      {data &&
-        data.length > 0 &&
-        data.map((item) => {
-          return (
-            <div key={item._id}>
-              <p>Name : {item.name}</p>
-              <p>Description : {item.description}</p>
-              <p>Price : {item.price}</p>
-              <img style={{ width: "200px" }} src={item.image} alt={item._id} />
-            </div>
-          );
-        })}
-    </div>
+    
+    {loading && "Loading....."}
+    {error && "something went wrong...."}
+    {data &&
+      data.length > 0 && (
+        <Grid container spacing={3}>
+          {data.map((item) => (
+            <Grid item xs={12} sm={6} md={4} key={item._id}>
+              <div style={{boxShadow: "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"}}>
+                <h3>Name : {item.name}</h3>
+                <h3>Category : {item.type}</h3>
+                <p>Description : {item.description}</p>
+                <h3>Price : {item.price}</h3>
+                <img
+                  style={{ width: "100%", height: "auto" }}
+                  src={item.image}
+                  alt={item._id}
+                />
+              </div>
+            </Grid>
+          ))}
+        </Grid>
+      )}
+  </div>
   );
 };
 

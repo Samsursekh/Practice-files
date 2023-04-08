@@ -1,21 +1,25 @@
-import './App.css';
+import "./App.css";
 
-import {Route, Routes} from "react-router-dom"
-import { Signup } from './components/Signup';
-import { Login } from './components/Login';
-import { AllProduct } from './components/AllProduct';
-import { AddProduct } from './components/AddProduct';
+import { Route, Routes } from "react-router-dom";
+import { Signup } from "./components/Signup";
+import { Login } from "./components/Login";
+import { AllProduct } from "./components/AllProduct";
+import { AddProduct } from "./components/AddProduct";
+import { Typography } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-        <h1>Ecommerce APP</h1>
-        <Routes>
-          <Route path='/signup' element={<Signup/>} />
-          <Route path='/' element={<Login/>} />
-          <Route path="/all" element={<AllProduct />}/>
-          <Route path="/add" element={<AddProduct/>}/>
-        </Routes>
+      <Typography variant="h4">
+        Ecommerce APP
+      </Typography>
+      ;
+      <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/all" element={<AllProduct />} />
+        <Route path="/add" element={<AddProduct />} />
+      </Routes>
     </div>
   );
 }
