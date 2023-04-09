@@ -20,7 +20,7 @@ const Signup = () => {
         city,
       };
 
-      fetch("http://localhost:8000/signup", {
+      fetch("https://dark-gold-eel-shoe.cyclic.app/signup", {
         method: "POST",
         body: JSON.stringify(payload),
         headers: {

@@ -24,7 +24,7 @@ const AddProduct = () => {
 
     console.log(payload);
 
-    fetch("http://localhost:8000/products/create", {
+    fetch("https://dark-gold-eel-shoe.cyclic.app/products/create", {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {

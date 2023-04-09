@@ -8,7 +8,7 @@ const AllProduct = () => {
   const [data, setdata] = useState("");
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:8000/products", {
+    fetch("https://dark-gold-eel-shoe.cyclic.app/products", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("BearToken")}`,
       },
@@ -16,6 +16,7 @@ const AllProduct = () => {
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
+        // console.log(res.data);
         setdata(res);
         setLoading(false);
       })
@@ -29,7 +30,7 @@ const AllProduct = () => {
     <div>
     
     {loading && "Loading....."}
-    {error && "something went wrong...."}
+    {error && "Please Signup First 😁"}
     {data &&
       data.length > 0 && (
         <Grid container spacing={3}>

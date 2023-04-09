@@ -14,7 +14,7 @@ const Login = () => {
       password,
     };
 
-    fetch("http://localhost:8000/login", {
+    fetch("https://dark-gold-eel-shoe.cyclic.app/login", {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {
