@@ -8,7 +8,7 @@ const AllProduct = () => {
   const [data, setdata] = useState("");
   useEffect(() => {
     setLoading(true);
-    fetch("https://clumsy-seal-buckle.cyclic.app/products", {
+    fetch("https://dark-gold-eel-shoe.cyclic.app/products", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("BearToken")}`,
       },
@@ -30,7 +30,7 @@ const AllProduct = () => {
     <div>
     
     {loading && "Loading....."}
-    {error && "something went wrong...."}
+    {error && "Please Signup First 😁"}
     {data &&
       data.length > 0 && (
         <Grid container spacing={3}>
