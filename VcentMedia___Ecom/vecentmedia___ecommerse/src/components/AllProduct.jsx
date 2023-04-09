@@ -8,7 +8,7 @@ const AllProduct = () => {
   const [data, setdata] = useState("");
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:8000/products", {
+    fetch("https://clumsy-seal-buckle.cyclic.app/products", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("BearToken")}`,
       },
@@ -16,6 +16,7 @@ const AllProduct = () => {
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
+        // console.log(res.data);
         setdata(res);
         setLoading(false);
       })
