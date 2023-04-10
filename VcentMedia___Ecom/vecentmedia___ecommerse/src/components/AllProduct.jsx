@@ -30,7 +30,7 @@ const AllProduct = () => {
     <div>
     
     {loading && "Loading....."}
-    {error && "Please Signup First 😁"}
+   <h1 style={{color : "blue"}}>{error && "Please Signup First 😁"}</h1> 
     {data &&
       data.length > 0 && (
         <Grid container spacing={3}>

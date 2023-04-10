@@ -20,6 +20,8 @@ const Signup = () => {
         city,
       };
 
+      console.log(payload)
+
       fetch("https://dark-gold-eel-shoe.cyclic.app/signup", {
         method: "POST",
         body: JSON.stringify(payload),
@@ -30,14 +32,41 @@ const Signup = () => {
         .then((res) => res.json())
         .then((res) => {
           console.log(res);
-          alert("Signup  Successfully");
-          navigate("/login");
+          alert("Signup Failed !");
         })
-        .catch((err) => console.log(err));
+        .catch((err) =>{
+          console.log(err);
+         alert("Sign up Successfull !")
+         navigate("/login")
+
+        });
     } else {
       alert("Fill all the Field");
     }
   };
+
+
+  // .then((res) => res.json())
+  //     .then((result) => {
+  //       console.log(result, "Result holo");
+  //       alert("Signup Successfully");
+  //       navigate('/login')
+  //   })
+  //     .catch((err) => {
+  //       console.log(err)
+  //       alert("Some Fields are not Filled")
+  //   });
+
+  //  console.log(data, "Data getting or not")
+//   data.then((result) => {
+//     console.log(result.json());
+//   }).catch((err) => {
+//     console.error(err);
+//   })
+
+
+//   };
+// }
   return (
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
