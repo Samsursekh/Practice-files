@@ -1,12 +1,12 @@
 const mongoose = require("mongoose")
 
 const productSchema = mongoose.Schema({
-    name : String,
-    type : String,
-    description : String,
+    name : {String, require: true},
+    type : {String, require: true},
+    description : {String, require: true},
     price : Number,
-    image : String,
-    userID : String,
+    image : {String, require: true},
+    userID :{String, require: true},
 })
 
 const ProductModel = mongoose.model("product", productSchema)
