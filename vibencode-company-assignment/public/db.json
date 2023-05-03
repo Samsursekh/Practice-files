@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "John",
+    "child": [
+      { "id": 2, "name": "Michael", "child": [] },
+      {
+        "id": 3,
+        "name": "Bob",
+        "child": [
+          {
+            "id": 4,
+            "name": "David",
+            "child": [
+              { "id": 5, "name": "Ross", "child": [] },
+              { "id": 6, "name": "Joshua", "child": [] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "John",
+    "child": [
+      { "id": 8, "name": "Michael", "child": [] },
+      { "id": 9, "name": "Bob", "child": [] }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "David",
+    "child": [
+      { "id": 11, "name": "Ross", "child": [] },
+      {
+        "id": 12,
+        "name": "Joshua",
+        "child": [
+          {
+            "id": 13,
+            "name": "Sheldon",
+            "child": [
+              { "id": 14, "name": "Mike", "child": [] },
+              { "id": 15, "name": "Rishabh", "child": [] }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
