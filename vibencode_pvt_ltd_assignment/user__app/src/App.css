@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+.userButton{
+  color: white;
+  width: 100px;
+  background-color: blue;
+  height: 36px;
+  border: 3px solid white;
+  cursor: pointer;
+  margin-top: 100px;
+  font-weight: 800;
+}
+.userButton:hover{
+  color: blue;
+  background-color: white;
+  border: 3px solid blue;
+}
+
+.childUserButton{
+  color: rgb(2, 31, 255);
+  width: 100px;
+  background-color: rgb(17, 255, 37);
+  height: 36px;
+  border: 0;
+  cursor: pointer;
+  margin-top: 100px;
+  font-weight: 800;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.childUserButton:hover{
+  color: rgb(17, 255, 37);
+  background-color: rgb(52, 7, 255);
+  border: 3px solid rgb(17, 255, 37);
+}
+
+.grandChildUserButton{
+  color: white;
+  width: 100px;
+  background-color: rgb(71, 8, 113);
+  height: 36px;
+  border: 3px solid white;
+  cursor: pointer;
+  margin-top: 100px;
+  font-weight: 800;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.grandChildUserButton:hover{
+  color: rgb(71, 8, 113);
+  background-color: white;
+  border: 3px solid rgb(71, 8, 113);
+}
+
+/* grandChildUserSonButton */
+
+.grandChildUserSonButton{
+  color: white;
+  width: 100px;
+  background-color: rgb(125, 117, 2);
+  height: 36px;
+  border: 3px solid white;
+  cursor: pointer;
+  margin-top: 100px;
+  font-weight: 800;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.grandChildUserSonButton:hover{
+  color: rgb(125, 117, 2);
+  background-color: white;
+  border: 3px solid rgb(125, 117, 2);
+}
